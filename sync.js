@@ -103,7 +103,7 @@ try{const raw=localStorage.getItem('life_app_v02')||localStorage.getItem('life_a
  if(!configured){message('Можно открыть локальный режим или сначала настроить Firebase.');return}
  message('Подключаем Firebase…');
  try{
-  for(const name of ['app','auth','firestore'])await loadScript('./vendor/firebase-'+name+'-compat.js');
+  for(const name of ['app','auth','firestore'])await loadScript('./firebase-'+name+'-compat.js');
   firebase.initializeApp(cfg);auth=firebase.auth();db=firebase.firestore();
   // SDK cache is intentionally memory-only. The account-scoped outbox above is the durable offline store.
   // This avoids leaving a second persistent copy of private records after signing out.

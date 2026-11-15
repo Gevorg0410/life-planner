@@ -7,4 +7,4 @@ Official upstream: https://github.com/firebase/firebase-js-sdk
 Official distribution: https://www.gstatic.com/firebasejs/13.3.0/
 License: https://www.apache.org/licenses/LICENSE-2.0
 
-The official JavaScript distribution files in vendor/ are included unchanged.
+The official JavaScript distribution files in this folder are included unchanged.
